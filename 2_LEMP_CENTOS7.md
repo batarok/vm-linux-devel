@@ -2,8 +2,7 @@
 ### DISABLE SELINUX
 <details>
 <summary>Lihat</summary>
-\```md
-Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
+<p>Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \
 caranya
 ```plaintext 
@@ -11,12 +10,11 @@ sudo vi /etc/selinux/config
 ```
 lalu tekan huruf **i** di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
 ![disabled-selinux](/asset/image/disabled-selinux.png)
-\
 simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
 ```plaintext 
 sudo reboot
 ```
-\```
+</p>
 </details>
 
 ***

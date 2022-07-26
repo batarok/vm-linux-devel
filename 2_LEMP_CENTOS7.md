@@ -4,10 +4,10 @@
 <summary>Lihat</summary>
 <p>Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled</br>
 caranya
-```plaintext 
+<blockquote>
 sudo vi /etc/selinux/config
-```
-lalu tekan huruf **i** di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
+</blockquote>
+lalu tekan huruf <b>i</b> di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
 <img src="/asset/image/disabled-selinux.png" alt="disabled-selinux">
 simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
 ```plaintext 

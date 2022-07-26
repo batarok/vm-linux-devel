@@ -33,3 +33,7 @@ sudo yum install -y openssh-server wget unzip net-tools
 ```
 \
 install epel-release nginx
+\
+```plaintext
+sudo yum -y install epel-release nginx
+```

@@ -53,6 +53,8 @@ Setelah itu coba akses website menggunakan url http://127.0.0.1:880 atau sesuai 
 4. Install php-fpm
 Untuk installasi php-fpm perlu melakukan hal ini \
 ```plaintext
-sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm``` \
+sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+```
 ```plaintext
-sudo yum -y install yum-utils```
+sudo yum -y install yum-utils
+```

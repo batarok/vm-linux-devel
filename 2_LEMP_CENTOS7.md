@@ -78,4 +78,16 @@ Setelah berhasil cek versi php menggunakan perintah
 php -v
 ```
 ***
-### KONFIGURASI NGINX PHP-FPM
+### KONFIGURASI PHP-FPM & NGINX
+- Konfigurasi PHP-FPM \
+  Lakukan perintah berikut
+  ```plaintext
+  sudo vi /etc/opt/remi/php74/php-fpm.d/www.conf
+  ```
+  Kemudian ubah bagian berikut
+  > user = apache menjadi user = nginx
+  > group = apache menjadi group = nginx
+  > listen = 127.0.0.1:9000 menjadi listen = 127.0.0.1:9074
+  > ;listen.owner = nobody menjadi listen.owner = nginx
+  > ;listen.group = nobody menjadi listen.group = nginx
+  > ;listen.mode = 0660 menjadi listen.mode = 0660

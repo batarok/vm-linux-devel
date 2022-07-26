@@ -44,3 +44,7 @@ sudo systemctl enable nginx
 ```plaintext
 sudo systemctl start nginx
 ```
+- lakukan pengecekan service nginx
+```plaintext
+sudo systemctl status nginx
+```

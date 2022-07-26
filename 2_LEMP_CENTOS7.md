@@ -1,21 +1,18 @@
 # LEPM CENTOS 7
 ### DISABLE SELINUX
-<details>
-<summary>Lihat</summary>
-<p>Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled</br>
+Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
+\
 caranya
-<blockquote>
+```plaintext 
 sudo vi /etc/selinux/config
-</blockquote>
-Lalu tekan huruf <b>i</b> di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
-<img src="/asset/image/disabled-selinux.png" alt="disabled-selinux"></br>
-Simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
-<blockquote>
+```
+lalu tekan huruf **i** di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
+![disabled-selinux](/asset/image/disabled-selinux.png)
+\
+simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
+```plaintext 
 sudo reboot
-</blockquote>
-</p>
-</details>
-
+```
 ***
 ### INSTALL TOOLS BANTUAN
 Lakukan installasi tools untuk mempermudah dalam proses selanjutnya

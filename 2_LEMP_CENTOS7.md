@@ -46,3 +46,7 @@ sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```plaintext
 sudo yum -y install yum-utils
 ```
+Gunakan perintah dibawah ini untuk melakukan pengecekan versi php-fpm yang tersedia
+```plaintext 
+yum --disablerepo="*" --enablerepo="remi-safe" list php[7-9][0-9].x86_64
+```

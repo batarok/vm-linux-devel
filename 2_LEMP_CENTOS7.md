@@ -101,5 +101,5 @@ Jika berhasil tidak akan ada error yang muncul, jika ada error muncul bisa dicek
 ```plaintext
 systemctl status php74-php-fpm
 ```
-![status-php74-fpm-normal](asset/image/status-php74-php-fpm.png)
+![status-php74-fpm-normal](asset/image/status-php74-php-fpm.png) \
 untuk error yang muncul bisa dicari di google

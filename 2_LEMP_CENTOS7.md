@@ -49,7 +49,7 @@ Lalu lakukan reload firewall-cmd
 firewall-cmd --reload
 ```
 Setelah hal ini dilakukan seharusnya website sudah dapat diakses.
----
+***
 ## INSTALL PHP-FPM
 1. Install php-fpm \
 Untuk installasi php-fpm perlu melakukan hal ini

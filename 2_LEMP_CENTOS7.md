@@ -103,3 +103,73 @@ systemctl status php74-php-fpm
 ```
 ![status-php74-fpm-normal](asset/image/status-php74-php-fpm.png) \
 untuk error yang muncul bisa dicari di google
+\
+\
+- Konfigurasi NGINX
+  Lakukan perintah berikut untuk mengubah default config nginx, lakukan backup terlebih dahulu sebelum melakukan edit, untuk cara backup dengan perintah berikut
+  ```plaintext
+  sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf-bak
+  ```
+  Lalu untuk melakukan edit dengan perintah
+  ```plaintext
+  sudo vi /etc/nginx/nginx.conf
+  ```
+  Supaya default nginx bisa menjalankan file php lakukan perubahan seperti berikut
+  ```plaintext
+  user nginx;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+include /usr/share/nginx/modules/*.conf;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile            on;
+    tcp_nopush          on;
+    tcp_nodelay         on;
+    keepalive_timeout   65;
+    types_hash_max_size 4096;
+
+    include             /etc/nginx/mime.types;
+    default_type        application/octet-stream;
+
+    include /etc/nginx/conf.d/*.conf;
+
+    server {
+        listen       80;
+        listen       [::]:80;
+        server_name  _;
+        root         /usr/share/nginx/html;
+        index   index.php index.html;
+
+        include /etc/nginx/default.d/*.conf;
+
+         location / {
+         try_files $uri $uri/ =404;
+            }
+
+        error_page 404 /404.html;
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+        }
+        location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass 127.0.0.1:9074;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+         }
+
+    }
+}
+  ```

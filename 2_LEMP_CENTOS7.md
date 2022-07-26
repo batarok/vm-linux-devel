@@ -64,7 +64,7 @@ Gunakan perintah dibawah ini untuk melakukan pengecekan versi php-fpm yang terse
 yum --disablerepo="*" --enablerepo="remi-safe" list php[7-9][0-9].x86_64
 ```
 Nanti akan tertampil kurang lebih seperti gambar \
-![list-repo-php-fpm](/asset/image/list-repo-php-fpm.png)
+![list-repo-php-fpm](/asset/image/list-repo-php-fpm.png) \
 Misal kita ingin menggunakan php74-php-fpm maka lakukan perintah berikut
 ```plaintext
 sudo yum-config-manager --enable remi-php74
@@ -77,3 +77,5 @@ Setelah berhasil cek versi php menggunakan perintah
 ```plaintext
 php -v
 ```
+***
+### KONFIGURASI NGINX PHP-FPM

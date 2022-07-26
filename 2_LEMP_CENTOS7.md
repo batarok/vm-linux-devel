@@ -16,7 +16,7 @@ sudo reboot
 \
 install ssh, wget, unzip, net-tools
 ```plaintext 
-sudo yum install -y openssh-server wget unzip net-tools
+sudo yum install -y openssh-server wget unzip net-tools curl
 ```
 3. Install webserver nginx
 install epel-release nginx

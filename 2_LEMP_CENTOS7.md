@@ -1,5 +1,6 @@
 # LEPM CENTOS 7
-1. disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
+## DISABLE SELINUX
+Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \
 caranya
 ```plaintext 
@@ -12,13 +13,15 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 ```plaintext 
 sudo reboot
 ```
-1. Lakukan installasi tools untuk mempermudah dalam proses selanjutnya
+## INSTALL TOOLS BANTUAN
+Lakukan installasi tools untuk mempermudah dalam proses selanjutnya
 \
 install ssh, wget, unzip, net-tools
 ```plaintext 
 sudo yum install -y openssh-server wget unzip net-tools curl
 ```
-3. Install webserver nginx
+## INSTALL WEBSERVER
+Install webserver nginx
 install epel-release nginx
 ```plaintext
 sudo yum -y install epel-release nginx
@@ -46,6 +49,7 @@ Lalu lakukan reload firewall-cmd
 firewall-cmd --reload
 ```
 Setelah hal ini dilakukan seharusnya website sudah dapat diakses.
+## INSTALL PHP-FPM
 1. Install php-fpm \
 Untuk installasi php-fpm perlu melakukan hal ini
 ```plaintext
@@ -60,3 +64,15 @@ yum --disablerepo="*" --enablerepo="remi-safe" list php[7-9][0-9].x86_64
 ```
 Nanti akan tertampil kurang lebih seperti gambar \
 ![list-repo-php-fpm](/asset/image/list-repo-php-fpm.png)
+Misal kita ingin menggunakan php74-php-fpm maka lakukan perintah berikut
+```plaintext
+sudo yum-config-manager --enable remi-php74
+```
+Kemudian kita install dengan perintah berikut
+```plaintext
+sudo yum -y install php php74-php-fpm
+```
+Setelah berhasil cek versi php menggunakan perintah
+```plaintext
+php -v
+```

@@ -79,7 +79,7 @@ php -v
 ```
 ***
 ### KONFIGURASI PHP-FPM & NGINX
-- **Konfigurasi PHP-FPM** \
+#### Konfigurasi PHP-FPM
   Lakukan perintah berikut
   ```plaintext
   sudo vi /etc/opt/remi/php74/php-fpm.d/www.conf
@@ -104,7 +104,7 @@ systemctl status php74-php-fpm
 ![status-php74-fpm-normal](asset/image/status-php74-php-fpm.png) \
 untuk error yang muncul bisa dicari di google
 
-- **Konfigurasi NGINX** \
+#### Konfigurasi NGINX
   Lakukan perintah berikut untuk mengubah default config nginx, lakukan backup terlebih dahulu sebelum melakukan edit, untuk cara backup dengan perintah berikut
   ```plaintext
   sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf-bak

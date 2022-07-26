@@ -24,7 +24,7 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 ```plaintext 
 sudo reboot
 ```
-2. lakukan installasi tools untuk mempermudah dalam proses selanjutnya
+2. Lakukan installasi tools untuk mempermudah dalam proses selanjutnya
 \
 install ssh, wget, unzip, net-tools
 ```plaintext 
@@ -49,3 +49,7 @@ sudo systemctl start nginx
 sudo systemctl status nginx
 ```
 Setelah itu coba akses website menggunakan url http://127.0.0.1:880 atau sesuai port yang sudah diseting di sesi [**install centos 7 di virtualbox**](1_install_centos7_vbox_win10.md)
+
+4. Install php-fpm
+Untuk installasi php-fpm perlu melakukan hal ini \
+```sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm```

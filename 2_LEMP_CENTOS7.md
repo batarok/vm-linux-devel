@@ -1,5 +1,5 @@
 # LEPM CENTOS 7
-## DISABLE SELINUX
+### DISABLE SELINUX
 Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \
 caranya
@@ -14,7 +14,7 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 sudo reboot
 ```
 ***
-## INSTALL TOOLS BANTUAN
+### INSTALL TOOLS BANTUAN
 Lakukan installasi tools untuk mempermudah dalam proses selanjutnya
 \
 install ssh, wget, unzip, net-tools
@@ -22,8 +22,7 @@ install ssh, wget, unzip, net-tools
 sudo yum install -y openssh-server wget unzip net-tools curl
 ```
 ***
-## INSTALL WEBSERVER
-Install webserver nginx
+### INSTALL WEBSERVER NGINX
 install epel-release nginx
 ```plaintext
 sudo yum -y install epel-release nginx
@@ -52,8 +51,7 @@ firewall-cmd --reload
 ```
 Setelah hal ini dilakukan seharusnya website sudah dapat diakses.
 ***
-## INSTALL PHP-FPM
-1. Install php-fpm \
+### INSTALL PHP-FPM
 Untuk installasi php-fpm perlu melakukan hal ini
 ```plaintext
 sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm

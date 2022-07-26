@@ -176,3 +176,9 @@ Setelah selesai edit jangan lupa disimpan lalu lakukan perintah berikut
 ```plaintext
 sudo systemctl restart nginx
 ```
+#### TESTING PHP-FPM & NGIN
+- Tahap pengujian hasil seting bisa dengan cara membuat file index.php yang diletakan didalam folder ```/usr/share/nginx/html``` untuk caranya lakukan perintah berikut
+  ```plaintext
+  sudo vi /usr/share/nginx/html/index.php
+  ```
+  Lali isi dengan script ```<?php phpinfo(); ?>```

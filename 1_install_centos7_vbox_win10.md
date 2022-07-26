@@ -5,4 +5,6 @@
 Langkah awal, download aplikasi VirtualBox dan VirtualBox Extension Pack <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">disini</a>. \
 Selanjutnya install aplikasi VirtualBox seperti menginstall aplikasi windows pada umumnya. \
 Setelah berhasil terinstall, disarankan melakukan restart komputer. \
-Langkah selanjutnya setelah komputer direstart, buka aplikasi VirtualBox dan masuk ke menu xxx. \
+Langkah selanjutnya setelah komputer direstart, buka aplikasi VirtualBox dan masuk ke menu xxx.
+
+## Proses installasi Centos 7 di VirtualBox

@@ -2,6 +2,7 @@
 ### DISABLE SELINUX
 <details>
 <summary>Lihat</summary>
+\```md
 Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \
 caranya
@@ -15,6 +16,7 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 ```plaintext 
 sudo reboot
 ```
+\```
 </details>
 
 ***

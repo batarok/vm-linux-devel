@@ -45,7 +45,7 @@ Lalu lakukan reload firewall-cmd
 ```plaintext
 firewall-cmd --reload
 ```
-
+Setelah hal ini dilakukan seharusnya website sudah dapat diakses. \
 1. Install php-fpm
 Untuk installasi php-fpm perlu melakukan hal ini \
 ```plaintext

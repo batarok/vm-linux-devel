@@ -8,7 +8,7 @@ caranya
 sudo vi /etc/selinux/config
 ```
 lalu tekan huruf **i** di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
-![disabled-selinux](/asset/image/disabled-selinux.png)
+<img src="/asset/image/disabled-selinux.png" alt="disabled-selinux">
 simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
 ```plaintext 
 sudo reboot

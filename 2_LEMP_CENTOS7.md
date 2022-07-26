@@ -36,7 +36,15 @@ sudo systemctl start nginx
 ```plaintext
 sudo systemctl status nginx
 ```
-Setelah itu coba akses website menggunakan url http://127.0.0.1:880 atau sesuai port yang sudah diseting di sesi ![**install centos 7 di virtualbox**](1_install_centos7_vbox_win10.md)
+Setelah itu coba akses website menggunakan url http://127.0.0.1:880 atau sesuai port yang sudah diseting di sesi ![**install centos 7 di virtualbox**](1_install_centos7_vbox_win10.md) \
+Jika hasil akses url nya gagal berarti melakukan open port http, untuk caranya
+```plaintext
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+```
+Lalu lakukan reload firewall-cmd
+```plaintext
+firewall-cmd --reload
+```
 
 1. Install php-fpm
 Untuk installasi php-fpm perlu melakukan hal ini \

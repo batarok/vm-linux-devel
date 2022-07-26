@@ -181,4 +181,4 @@ sudo systemctl restart nginx
   ```plaintext
   sudo vi /usr/share/nginx/html/index.php
   ```
-  Lali isi dengan script ```<?php phpinfo(); ?>```
+  Lalu isi dengan script ```<?php phpinfo(); ?>```

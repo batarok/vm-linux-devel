@@ -92,4 +92,13 @@ php -v
   > ;listen.group = nobody menjadi listen.group = nginx \
   > ;listen.mode = 0660 menjadi listen.mode = 0660
 
-Untuk port 9074 pada listen = 127.0.0.1:9074 ini bebas, port tersebut hanya digunakan penanda bawa port tersebut untuk php74-php-fpm siapa tahu kedepan ingin menggunakan multi php-fpm
+Untuk port 9074 pada listen = 127.0.0.1:9074 ini bebas, port tersebut hanya digunakan penanda bawa port tersebut untuk php74-php-fpm siapa tahu kedepan ingin menggunakan multi php-fpm \
+Setelah itu lakukan aktivasi php74-php-fpm dengan perintah
+```plaintext
+sudo systemctl enable php74-php-fpm
+```
+Jika berhasil tidak akan ada error yang muncul, jika ada error muncul bisa dicek menggunakan perintah
+```plaintext
+systemctl status php74-php-fpm
+```
+untuk error yang muncul bisa dicari di google

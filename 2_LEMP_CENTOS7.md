@@ -58,3 +58,5 @@ Gunakan perintah dibawah ini untuk melakukan pengecekan versi php-fpm yang terse
 ```plaintext 
 yum --disablerepo="*" --enablerepo="remi-safe" list php[7-9][0-9].x86_64
 ```
+Nanti akan tertampil kurang lebih seperti gambar \
+![list-repo-php-fpm](\asset/image/list-repo-php-fpm.png)

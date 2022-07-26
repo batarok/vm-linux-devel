@@ -30,7 +30,17 @@ install ssh, wget, unzip, net-tools
 ```plaintext 
 sudo yum install -y openssh-server wget unzip net-tools
 ```
+3. Install webserver nginx
 install epel-release nginx
 ```plaintext
 sudo yum -y install epel-release nginx
+```
+Aktifkan dan jalankan service nginx dengan perintah berikut
+- gunakan perintah dibawah supaya service nginx bisa berjalan saat vm di reboot
+```plaintext
+sudo systemctl enable nginx
+```
+- jalankan service nginx
+```plaintext
+sudo systemctl start nginx
 ```

@@ -7,12 +7,12 @@ caranya
 <blockquote>
 sudo vi /etc/selinux/config
 </blockquote>
-lalu tekan huruf <b>i</b> di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
-<img src="/asset/image/disabled-selinux.png" alt="disabled-selinux">
-simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
-```plaintext 
+Lalu tekan huruf <b>i</b> di keyboard yang berfungsi sebagai insert atau supaya bisa mengedit file tersebut
+<img src="/asset/image/disabled-selinux.png" alt="disabled-selinux"></br>
+Simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian lakukan reboot dengan perintah
+<blockquote>
 sudo reboot
-```
+</blockquote>
 </p>
 </details>
 

@@ -1,5 +1,4 @@
-Install Centos 7 di VirtualBox Windows 10
-=========================================
+# Install Centos 7 di VirtualBox Windows 10
 > Perangkat yang disarankan adalah perangkat komputer yang prosesornya sudah mendukung teknologi virtualisasi
 > dan juga prosesor sudah mendukung 64 bit
 

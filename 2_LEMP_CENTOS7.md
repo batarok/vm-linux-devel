@@ -2,8 +2,7 @@
 ### DISABLE SELINUX
 <details>
 <summary>Lihat</summary>
-<p>Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
-\
+<p>Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled '\'
 caranya
 ```plaintext 
 sudo vi /etc/selinux/config

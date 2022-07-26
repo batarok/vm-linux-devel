@@ -41,6 +41,4 @@ Aktifkan dan jalankan service nginx dengan perintah berikut
 sudo systemctl enable nginx
 ```
 - jalankan service nginx
-```plaintext
-sudo systemctl start nginx
-```
+```plaintext sudo systemctl start nginx ```

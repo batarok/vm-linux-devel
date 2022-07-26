@@ -90,4 +90,6 @@ php -v
   > listen = 127.0.0.1:9000 menjadi listen = 127.0.0.1:9074 \
   > ;listen.owner = nobody menjadi listen.owner = nginx \
   > ;listen.group = nobody menjadi listen.group = nginx \
-  > ;listen.mode = 0660 menjadi listen.mode = 0660 \
+  > ;listen.mode = 0660 menjadi listen.mode = 0660
+\
+Untuk port 9074 pada listen = 127.0.0.1:9074 ini bebas, port tersebut hanya digunakan penanda bawa port tersebut untuk php74-php-fpm siapa tahu kedepan ingin menggunakan multi php-fpm

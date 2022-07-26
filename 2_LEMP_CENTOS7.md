@@ -172,7 +172,7 @@ http {
     }
 }
   ```
-Setelah selesai edit jangan lupa disimpan lalu lakukan perintah berikut \
+Setelah selesai edit jangan lupa disimpan lalu lakukan perintah berikut
 ```plaintext
 sudo systemctl restart nginx
 ```

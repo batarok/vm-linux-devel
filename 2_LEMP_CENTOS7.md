@@ -1,4 +1,5 @@
 # LEPM CENTOS 7
+***
 ## DISABLE SELINUX
 Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \
@@ -13,6 +14,7 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 ```plaintext 
 sudo reboot
 ```
+***
 ## INSTALL TOOLS BANTUAN
 Lakukan installasi tools untuk mempermudah dalam proses selanjutnya
 \
@@ -20,6 +22,7 @@ install ssh, wget, unzip, net-tools
 ```plaintext 
 sudo yum install -y openssh-server wget unzip net-tools curl
 ```
+***
 ## INSTALL WEBSERVER
 Install webserver nginx
 install epel-release nginx

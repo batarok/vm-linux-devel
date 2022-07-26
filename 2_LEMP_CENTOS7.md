@@ -1,5 +1,4 @@
 # LEPM CENTOS 7
-___
 ## DISABLE SELINUX
 Disable selinux dengan cara mengubah SELINUX=enforcing menjadi SELINUX=disabled
 \

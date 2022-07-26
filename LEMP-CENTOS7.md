@@ -24,7 +24,7 @@ simpan hasil edit dengan cara tekan tombol **ESC** dan ketik **:wq!** kemudian l
 ```plaintext 
 sudo reboot
 ```
-lakukan installasi tools untuk mempermudah dalam proses selanjutnya
+2. lakukan installasi tools untuk mempermudah dalam proses selanjutnya
 \
 install ssh, wget, unzip, net-tools
 ```plaintext 
